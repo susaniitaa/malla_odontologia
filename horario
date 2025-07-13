@@ -7,7 +7,6 @@
     body {
       font-family: Arial, sans-serif;
       background: #f2f2f2;
-      margin: 0;
       padding: 20px;
     }
     h1 {
@@ -15,8 +14,8 @@
       color: #004080;
     }
     .semester {
-      margin: 20px 0;
       background: #fff;
+      margin: 20px 0;
       padding: 15px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -27,24 +26,21 @@
     }
     .subject {
       display: inline-block;
-      background: #d9eefe;
-      margin: 8px;
+      background: #d0eefe;
+      margin: 6px;
       padding: 10px 15px;
       border-radius: 8px;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
     .subject.completed {
       background: #a5d6a7;
       text-decoration: line-through;
     }
-    .subject:hover {
-      background: #bde0fe;
-    }
     .prerequisite {
       display: block;
       font-size: 0.8em;
-      color: #666;
+      color: #555;
     }
   </style>
 </head>
@@ -52,35 +48,99 @@
 
 <h1>Malla Interactiva - Odontología</h1>
 
+<!-- SEMESTRES -->
 <div class="semester">
   <h2>Semestre 1</h2>
-  <div class="subject" onclick="toggle(this)">
-    Anatomía Dental
-    <span class="prerequisite">(Sin prerrequisitos)</span>
-  </div>
-  <div class="subject" onclick="toggle(this)">
-    Biología
-    <span class="prerequisite">(Sin prerrequisitos)</span>
-  </div>
-  <div class="subject" onclick="toggle(this)">
-    Introducción a la Odontología
-    <span class="prerequisite">(Sin prerrequisitos)</span>
-  </div>
+  <div class="subject" onclick="toggle(this)">Biología</div>
+  <div class="subject" onclick="toggle(this)">Introducción a la Odontología</div>
+  <div class="subject" onclick="toggle(this)">Informática</div>
+  <div class="subject" onclick="toggle(this)">Anatomía Dental y Oclusión</div>
+  <div class="subject" onclick="toggle(this)">Bioquímica</div>
+  <div class="subject" onclick="toggle(this)">Ética General</div>
+  <div class="subject" onclick="toggle(this)">Lectoescritura</div>
+  <div class="subject" onclick="toggle(this)">Cátedra Universidad de Cartagena</div>
 </div>
 
 <div class="semester">
   <h2>Semestre 2</h2>
-  <div class="subject" onclick="toggle(this)">
-    Morfología
-    <span class="prerequisite">Prerequisito: Biología</span>
-  </div>
-  <div class="subject" onclick="toggle(this)">
-    Anatomía y Oclusión
-    <span class="prerequisite">Prerequisito: Anatomía Dental</span>
-  </div>
+  <div class="subject" onclick="toggle(this)">Morfología</div>
+  <div class="subject" onclick="toggle(this)">Fisiología</div>
+  <div class="subject" onclick="toggle(this)">Educación en Salud</div>
+  <div class="subject" onclick="toggle(this)">Inglés I</div>
+  <div class="subject" onclick="toggle(this)">Constitución Política</div>
+  <div class="subject" onclick="toggle(this)">Salud Familiar I</div>
 </div>
 
-<!-- Agrega más semestres aquí -->
+<div class="semester">
+  <h2>Semestre 3</h2>
+  <div class="subject" onclick="toggle(this)">Microbiología</div>
+  <div class="subject" onclick="toggle(this)">Farmacología Básica</div>
+  <div class="subject" onclick="toggle(this)">Cariología I</div>
+  <div class="subject" onclick="toggle(this)">Inglés II</div>
+  <div class="subject" onclick="toggle(this)">Crecimiento y Desarrollo I</div>
+</div>
+
+<div class="semester">
+  <h2>Semestre 4</h2>
+  <div class="subject" onclick="toggle(this)">Cariología II</div>
+  <div class="subject" onclick="toggle(this)">Periodoncia I</div>
+  <div class="subject" onclick="toggle(this)">Endodoncia I</div>
+  <div class="subject" onclick="toggle(this)">Inglés III</div>
+  <div class="subject" onclick="toggle(this)">Salud Familiar II</div>
+</div>
+
+<div class="semester">
+  <h2>Semestre 5</h2>
+  <div class="subject" onclick="toggle(this)">Anestesia y Cirugía</div>
+  <div class="subject" onclick="toggle(this)">Clínica de Semiología I</div>
+  <div class="subject" onclick="toggle(this)">Odontología Forense</div>
+  <div class="subject" onclick="toggle(this)">Prótesis Parcial Removible</div>
+  <div class="subject" onclick="toggle(this)">Clínica Restauradora I</div>
+</div>
+
+<div class="semester">
+  <h2>Semestre 6</h2>
+  <div class="subject" onclick="toggle(this)">Clínica Restauradora II</div>
+  <div class="subject" onclick="toggle(this)">Prótesis Parcial Fija y Materiales Dentales</div>
+  <div class="subject" onclick="toggle(this)">Clínica de Endodoncia I</div>
+  <div class="subject" onclick="toggle(this)">Clínica de Periodoncia I</div>
+  <div class="subject" onclick="toggle(this)">Diagnóstico y Plan de Tratamiento</div>
+</div>
+
+<div class="semester">
+  <h2>Semestre 7</h2>
+  <div class="subject" onclick="toggle(this)">Clínica de Semiología II</div>
+  <div class="subject" onclick="toggle(this)">Investigación Aplicada I</div>
+  <div class="subject" onclick="toggle(this)">Clínica del Adulto I</div>
+  <div class="subject" onclick="toggle(this)">Clínica Hospitalaria I</div>
+  <div class="subject" onclick="toggle(this)">Clínica Integral del Niño I</div>
+</div>
+
+<div class="semester">
+  <h2>Semestre 8</h2>
+  <div class="subject" onclick="toggle(this)">Clínica de Proyección Social I</div>
+  <div class="subject" onclick="toggle(this)">Clínica del Adulto II</div>
+  <div class="subject" onclick="toggle(this)">Clínica Hospitalaria II</div>
+  <div class="subject" onclick="toggle(this)">Investigación Aplicada II</div>
+  <div class="subject" onclick="toggle(this)">Clínica Integral del Niño II</div>
+</div>
+
+<div class="semester">
+  <h2>Semestre 9</h2>
+  <div class="subject" onclick="toggle(this)">Clínica de Proyección Social II</div>
+  <div class="subject" onclick="toggle(this)">Clínica del Adulto Especial</div>
+  <div class="subject" onclick="toggle(this)">Clínica de Mantenimiento y Promoción de la Salud</div>
+  <div class="subject" onclick="toggle(this)">Investigación Aplicada III</div>
+  <div class="subject" onclick="toggle(this)">Clínica de Urgencias</div>
+</div>
+
+<div class="semester">
+  <h2>Semestre 10</h2>
+  <div class="subject" onclick="toggle(this)">Clínica de Proyección Social III</div>
+  <div class="subject" onclick="toggle(this)">Publicaciones Científicas</div>
+  <div class="subject" onclick="toggle(this)">Fundamentación Electiva</div>
+  <div class="subject" onclick="toggle(this)">Rotaciones Electivas</div>
+</div>
 
 <script>
   function toggle(el) {
