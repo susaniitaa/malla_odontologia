@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva - Odontología</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+    }
+    .semester {
+      margin: 20px 0;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .semester h2 {
+      margin-top: 0;
+      color: #0077b6;
+    }
+    .subject {
+      display: inline-block;
+      background: #d9eefe;
+      margin: 8px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .subject.completed {
+      background: #a5d6a7;
+      text-decoration: line-through;
+    }
+    .subject:hover {
+      background: #bde0fe;
+    }
+    .prerequisite {
+      display: block;
+      font-size: 0.8em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Malla Interactiva - Odontología</h1>
+
+<div class="semester">
+  <h2>Semestre 1</h2>
+  <div class="subject" onclick="toggle(this)">
+    Anatomía Dental
+    <span class="prerequisite">(Sin prerrequisitos)</span>
+  </div>
+  <div class="subject" onclick="toggle(this)">
+    Biología
+    <span class="prerequisite">(Sin prerrequisitos)</span>
+  </div>
+  <div class="subject" onclick="toggle(this)">
+    Introducción a la Odontología
+    <span class="prerequisite">(Sin prerrequisitos)</span>
+  </div>
+</div>
+
+<div class="semester">
+  <h2>Semestre 2</h2>
+  <div class="subject" onclick="toggle(this)">
+    Morfología
+    <span class="prerequisite">Prerequisito: Biología</span>
+  </div>
+  <div class="subject" onclick="toggle(this)">
+    Anatomía y Oclusión
+    <span class="prerequisite">Prerequisito: Anatomía Dental</span>
+  </div>
+</div>
+
+<!-- Agrega más semestres aquí -->
+
+<script>
+  function toggle(el) {
+    el.classList.toggle('completed');
+  }
+</script>
+
+</body>
+</html>
